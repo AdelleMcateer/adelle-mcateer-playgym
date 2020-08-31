@@ -39,11 +39,11 @@
       "lastName": "Simpson",
       "email": "bart@simpson.com",
       "password": "secret",
-      "address": "Springfield ",
+      "address": "Springfield",
       "gender": "Male",
       "height": "1.65",
-      "weight": "65",
-      "id": "48c9b1f0-eaa6-11ea-abbb-f98a778f1017",
+      "weight": "52",
+      "id": "f5eb4900-eb75-11ea-a29b-c15b37e20000",
       "assessments": [],
       "goals": []
     }

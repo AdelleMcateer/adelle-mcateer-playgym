@@ -41,11 +41,29 @@ const bmiCalculator= {
 
     return 'Error in BMI Calculation';
   },  
+  
+  idealBodyWeight(user){
+    let genderWeight = 0;
+    
+    let heightInInches = this.convertHeightMetresToInches(user.height);
+    if(heightInInches < 60){
+      heightInInches = 60;
+    }
+    
+    if(user.gender === "Male"){
+      genderWeight = 50;
+    } else {
+      genderWeight = 45.5;
+    }
+    
+    const idealBodyWeight = genderWeight + ((heightInInches - 60) * 2.3);
+    return idealBodyWeight;
+  },
 
   isIdealBodyWeight(user) {
     const weight = user.weight;
 
-    const idealBodyWeight = this.BMICalculation(user);
+    const idealBodyWeight = this.idealBodyWeight(user);
 
     if (weight >= (idealBodyWeight - 2) && weight <= (idealBodyWeight + 2)) {
       return 'green';
@@ -56,6 +74,11 @@ const bmiCalculator= {
     } else {
       return 'red';
     }
+  },
+
+  convertHeightMetresToInches(height) {
+    const heightInInches = (height * 39.37).toFixed(2);
+    return heightInInches;
   },
 
 }

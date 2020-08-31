@@ -19,9 +19,6 @@ const trainerdashboard = {
       user: userStore.getAllUsers(loggedInUser.id),
       assessments: assessmentStore.getAllAssessments(loggedInUser.id),
       goals: goalStore.getUserGoals(loggedInUser.id),
-      //bmi: bmiCalculator.BMICalculation(loggedInUser.id),
-      //bmiCategory: bmiCalculator.getBMICategory(loggedInUser.id),
-      //ibw: bmiCalculator.isIdealBodyWeight(loggedInUser.id),
     };
     logger.info("about to render", userStore.getAllUsers());
     response.render("trainerdashboard", viewData);
@@ -30,10 +27,15 @@ const trainerdashboard = {
     viewUser(request, response) {
     const userId = request.params.id;
     logger.debug('Viewing Member = ', userId);
+      
     const viewData = {
       title: "Member Assessments",
       user: userStore.getUserById(userId),
       assessments: assessmentStore.getUserAssessments(userId),
+      bmi: bmiCalculator.BMICalculation(userId),
+      bmiCategory: bmiCalculator.getBMICategory(userId),
+      ibw: bmiCalculator.isIdealBodyWeight(userId),
+      
     };
     response.render("trainerassessment", viewData);
   },
