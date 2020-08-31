@@ -1,4 +1,4 @@
-# adelle-mcateer-playgym
-ICT Skills Assignment
+Welcome to the PlayGym 2
+=========================
 
-This is a contiuation of Assignment 2 in Semester 1 using Glitch. 
+Version 2 of the PlayGym application

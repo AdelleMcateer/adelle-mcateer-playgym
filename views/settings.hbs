@@ -1,0 +1,44 @@
+{{> menu id="settings"}}
+
+<div class="ui two column grid basic middle aligned segment">
+  <div class="column">
+  </div>
+  <div class="column">
+    <form class="ui stacked segment form" action="/settings" method="POST">
+      <h3 class="ui header">Update Details</h3>
+      <div class="two fields">
+        <div class="field">
+                    <label>Name</label>
+                    <input placeholder="{{user.name}}" type="text" name="name">
+                </div>
+                <div class="field">
+                    <label>Gender</label>
+                    <input placeholder="{{user.gender}}" type="text" name="gender">
+                </div>
+            </div>
+            <div class="field">
+                <label>Email</label>
+                <input placeholder="{{user.email}}" type="text" name="email">
+            </div>
+            <div class="field">
+                <label>Password</label>
+                <input type="password" name="password">
+            </div>
+            <div class="field">
+                <label>Address</label>
+                <input placeholder="{{user.address}}" type="text" name="address">
+            </div>
+            <div class="two fields">
+            <div class="field">
+                <label>Height</label>
+                <input placeholder="{{user.height}}" type="number" set="0.01" name="height">
+            </div>
+            <div class="field">
+                <label>Start Weight</label>
+                <input placeholder="{{user.startingWeight}}kg" type="number" set="0.01" name="startingWeight">
+            </div>
+            </div>
+      <button class="ui blue submit button">Submit</button>
+    </form>
+  </div>
+</div>

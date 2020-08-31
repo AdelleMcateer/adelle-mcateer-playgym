@@ -1,0 +1,51 @@
+{
+  "users": [
+    {
+      "firstName": "Homer",
+      "lastName": "Simpson",
+      "email": "homer@simpson.com",
+      "password": "secret",
+      "id": "3ad52697-6d98-4d80-8273-084de55a86c0"
+    },
+    {
+      "firstName": "Adelle",
+      "lastName": "McAteer",
+      "email": "adelle@mcateer.com",
+      "password": "secret",
+      "address": "100 Greenlea Road",
+      "gender": "F",
+      "height": "1.65",
+      "weight": "65",
+      "id": "f4bbab90-dfa1-11ea-84a0-c72c722cc819",
+      "assessments": [],
+      "goals": [],
+      "name": "Adelle McAteer"
+    },
+    {
+      "firstName": "Pete",
+      "lastName": "Lucia",
+      "email": "pete@lucia.com",
+      "password": "secret",
+      "address": "1 Rye Brook",
+      "gender": "Male",
+      "height": "1.75",
+      "weight": "80",
+      "id": "d6240db0-eaa2-11ea-a960-63cc2f5e9a9e",
+      "assessments": [],
+      "goals": []
+    },
+    {
+      "firstName": "Bart",
+      "lastName": "Simpson",
+      "email": "bart@simpson.com",
+      "password": "secret",
+      "address": "Springfield ",
+      "gender": "Male",
+      "height": "1.65",
+      "weight": "65",
+      "id": "48c9b1f0-eaa6-11ea-abbb-f98a778f1017",
+      "assessments": [],
+      "goals": []
+    }
+  ]
+}
