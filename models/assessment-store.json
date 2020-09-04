@@ -109,6 +109,17 @@
       "upperArm": "16",
       "waist": "30",
       "hips": "32"
+    },
+    {
+      "id": "b3649cc0-ed0b-11ea-99b1-85385a94f2cb",
+      "userid": "f4bbab90-dfa1-11ea-84a0-c72c722cc819",
+      "date": "Wed, 02 Sep 2020 11:01:49 GMT",
+      "weight": "65",
+      "chest": "30",
+      "thigh": "20",
+      "upperArm": "16",
+      "waist": "30",
+      "hips": "32"
     }
   ]
 }
